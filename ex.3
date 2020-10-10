@@ -1,13 +1,15 @@
 a = float(input())
 b = float(input())
 c = float(input())
-d = (b ** 2)-4 * a * c
+d = 0
 x = 0
 w = 0
 if a == 0:
-    a=1
+    x = (-c)/b
+    print(x)
+    raise SystemExit
 else:
-    a=a
+    d = (b ** 2) - 4 * a * c
 if d > 0:
     x = ((-b)-(d**0.5))/(2*a)
     w = ((-b)+(d**0.5))/(2*a)
