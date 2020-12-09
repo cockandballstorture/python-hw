@@ -1,9 +1,18 @@
-a = float(input())
-b = float(input())
-c = float(input())
-if a > b > c:
-    print(c)
-elif a > b < c:
-    print(b)
-else:
-    print(a)
+q=float(input())
+w=float(input())
+e=float(input())
+r=float(input())
+class complex:
+    def __init__(self,r,i):
+        self.r=r
+        self.i=i
+    def __sub__(self,a):
+        s=complex(0,0)
+        s.r=self.r-a.r
+        s.i=self.i-a.i
+        return(s)
+    def __str__(self):
+        return '{}+{}i'.format(self.r,self.i)
+k=complex(q,w)
+l=complex(e,r)
+print(k-l)
